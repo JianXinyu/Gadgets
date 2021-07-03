@@ -89,10 +89,11 @@ def check(driver, location):
 
 if __name__ == "__main__":
 
-    driver = webdriver.Firefox(executable_path='/home/xy/Desktop/geckodriver')
+    driver = webdriver.Firefox(executable_path='./geckodriver')
     driver.get("https://www.mrdappointments.gov.nl.ca/qwebbook/index.html")
 
     while True:
+        # choose your city 
         check(driver, 'Clarenville MRD')
         check(driver, 'Harbour Grace MRD')
         check(driver, 'Mount Pearl MRD')
